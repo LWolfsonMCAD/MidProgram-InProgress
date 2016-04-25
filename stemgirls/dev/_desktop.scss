@@ -1,0 +1,438 @@
+/*COLORS
+Blue: #284f63;
+Purple: #825084;
+Pink: #992D5A;
+Green: #188754;
+Dark Gray: #404040;
+
+/*
+
+
+/************************************
+Desktop version of site
+************************************/
+* { -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+}
+
+html {
+    background-color: #404040;
+}
+
+body {
+	position: relative;
+	width: 100%;
+	max-width: 960px;
+	height: 100%;
+	margin: 0px auto;
+
+	font-family: helvetica, arial, sans-serif;
+
+	background-color: white;
+}
+
+p {
+	font-size: 0.875em;
+	line-height: 1.4;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+a:hover, img.closebox:hover {
+	cursor: pointer;
+}
+
+span#noJSBackToTop {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	max-width: 960px;
+	padding: 5px 0px;
+
+	text-align: center;
+	background-color: #284f63;
+	z-index: 5;
+
+	a {
+		padding: 5px 20px;
+
+		font-weight: 200;
+		color: #fff;
+	}
+}
+
+header {
+	position: relative;
+	width: 100%;
+	height: 162px;
+
+	background-color: #284f63;
+	z-index: 10;
+
+	img.header-logo {
+		margin: 20px 27px; 
+	}
+
+	ul {
+		list-style: none;
+	}
+
+	ul.main-navigation {
+		float: left;
+		position: relative;
+		width: 100%;
+		margin-top: 5px;
+		margin-left: 3.75%;
+		padding: 0px;
+
+		font-size: 1em;
+		font-weight: 300;
+		z-index: 15;
+
+		li {
+			float: left;
+			margin-right: 2%;
+			padding: 10px 18px 0px 0px;
+
+			background-color: #284f63;
+
+			a {
+				display: block;
+				padding: 10px 0px;
+
+				text-decoration: none;
+				color: #fff;	
+			}
+
+		}
+	}
+
+	ul.main-navigation li.noJS:hover > ul {
+		display: block;
+
+		li:hover {
+			background-color: #992D5A;
+		}
+	}
+
+	ul.sub-navigation {
+		display: none;
+		position: absolute;
+		top: 50px;
+		width: 143px;
+		padding: 0px;
+		margin-left: -6px;
+
+		font-size: 0.875em;
+		line-height: 1.5;
+		background-color: #284f63;
+		z-index: 20;
+
+		li {
+			width: 142px;
+			margin-right: 0px;
+			padding: 10px 0px 0px 5px;
+
+			a {
+				display: block;
+			}
+
+		}
+
+	}
+}
+
+img.desktop-intro-pic {
+	position: absolute;
+    width: 33%;
+    max-width: 290px;
+    top: 140px;
+    right: 0;
+
+    z-index: 30;
+}
+
+
+div.container {
+	position: relative;
+	width: 100%;
+	padding: 0 3.75%;
+
+	z-index: 0;
+
+	h1 {
+		margin-top: 40px;
+
+		font-weight: 700;
+	}
+
+
+/*If there's an introductory paragraph, this will style it*/
+	section.intro {
+		position: relative;
+		height: auto;
+		margin-bottom: 10px;
+
+		p {
+			float: left;
+			width: 65%;
+			max-width: 575px;
+			margin-top: 5px;
+
+			font-size: 1.125em;
+			line-height: 1.7;
+		}
+
+		img.mobile-intro-pic {
+			display: none;
+		}
+	}
+
+
+/*References section on all pages*/
+	section.references {
+		width: 66%;
+		max-width: 590px;
+		margin: 30px auto;
+
+		border-top: 0.5px solid #91989d;
+
+		h6 {
+			margin: 10px 0px 4px;
+		}
+
+		ol {
+			margin: 0px;
+			padding-left: 13px;
+
+			li {
+				font-size: 0.750em;
+				font-style: oblique;
+			}
+		}
+	}
+}
+
+/*Footer section is the same on all pages, isn't shown on homepage*/
+footer {
+	width: 100%;
+	height: 76px;
+
+	background-color: #825084;
+
+	p.copyright {
+		float: left;
+		padding-top: 16px;
+		margin-left: 36px;
+
+		color: #fff;
+	}
+
+	div.socialMediaIcons {
+		float: right;
+		position: relative;
+		margin-right: 36px;
+		padding-top: 20px;
+	}
+}
+
+
+/************************************
+SciGirls Seven page
+************************************/
+section#sciseven-list {
+	height: auto;
+	margin-bottom: 25px;
+
+	div.sciseven {
+		width: 94%;
+		max-width: 430px;
+
+		span.sciseven-tip {
+			font-weight: 700;
+		}
+	}
+
+	div#sciseven-left-column {
+		float: left;
+		width: 49%;
+		max-width: 458px;
+		margin-right: 2%;
+	}
+
+	div#sciseven-right-column {
+		float: left;
+		width: 49%;
+	}
+}
+
+/************************************
+Role Models page
+************************************/
+section#roleModelFields {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	padding-left: 25px;
+	overflow: hidden;
+	border-bottom: 1px dotted #91989d;	
+
+		
+		div.fieldList {
+			float: left;
+			width: 24%;
+			margin-left: 6px;
+			margin-bottom: 30px;
+			font-size: 0.813em;
+			line-height: 1.4;
+
+				h2 {
+					font-weight: 400;
+					font-size: 1.5em;
+					margin-bottom: 0px;
+				}
+
+				ul {
+					list-style: none;
+					padding-left: 0px;
+					margin-top: 0px;
+				}
+
+				li {
+					width: 100%;
+					margin-left: -3px;
+					padding-left: 3px;
+					line-height: 1.8em;
+
+						a {
+							display: block;
+						}
+				}
+
+		}
+
+		div.fieldList.noJS a:hover {
+			font-weight: 700;
+			text-decoration: underline;
+			color: #992D5A;
+		}
+
+		div.fieldList:first-of-type {
+			margin-left: 0px;
+
+				h2 {
+					color: #284f63;	
+				}
+		}
+
+		div.fieldList:nth-of-type(2) h2 {
+				color: #188754;
+			}
+
+		div.fieldList:nth-of-type(3) h2 {
+				color: #825084;
+			}
+
+		div.fieldList:last-of-type h2 {
+				color: #992D5A;
+			}
+					
+}
+
+
+
+section#roleModelBiographies {
+	width: 100%;
+	height: auto;
+	margin-top: 30px;
+
+		div.noJSPadding {
+			padding-top: 50px;
+
+			h3 {
+				text-decoration: none;
+				margin-bottom: 100px;
+			}
+		}
+
+		h2 {
+			color: #284f63;
+		}
+
+		h3 {
+			text-decoration: underline;
+		}
+
+		div.placeholder {
+			display: none;
+		}
+
+		div.roleModelPhotos {
+			float: left;
+			width: 25%;
+			max-width: 220px;
+			margin-right: 20px;
+
+				img {
+					display: block;
+					margin: 0px auto 25px;
+				}
+		}
+
+		div.roleModelInfo {
+			width: 70%;
+			margin: 20px auto;
+			-moz-column-count: 3;
+		    -moz-column-gap: 6px;
+		    -webkit-column-count: 3;
+		    -webkit-column-gap : 8px;
+
+		    	p {
+					-webkit-hyphens: auto;
+				  	-moz-hyphens: auto;
+				  	-ms-hyphens: auto;
+				  	hyphens: auto;
+				}
+
+				p:first-of-type {
+					margin-top: 0px;
+				}
+
+				p.disclaimer {
+					font-style: italic;
+				}
+		}
+
+		div.references {
+			clear: both;
+			width: 590px;
+			margin: 30px auto;
+			border-top: 0.5px solid #91989d;
+
+				h6 {
+					margin: 10px 0px 4px;
+				}
+
+				ol {
+					margin: 0px;
+					padding-left: 13px;
+
+						li {
+							font-size: 0.750em;
+							font-style: oblique;
+						}
+
+						a {
+							text-decoration: underline;
+							color: blue;
+						}
+				}
+
+		}
+
+}
+

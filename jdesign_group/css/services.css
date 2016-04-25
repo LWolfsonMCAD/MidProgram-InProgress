@@ -1,0 +1,107 @@
+* { -moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box; 
+}
+
+html {
+	
+}
+
+body {
+	height: 1275px;
+}
+
+.content p {
+	font-size: 10pt;
+}
+
+.col1 {
+	width: 168px;
+}
+
+.col2 {
+	width: 348px;
+}
+
+.col3 {
+	width: 528px;
+}
+
+#main-nav li:first-of-type {
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+h1 {
+	font-size: 24pt;
+	font-family: "ff-enzo-web", Helvetica, sans-serif;
+}
+
+h2 {
+	font-size: 16pt;
+	font-family: "ff-enzo-web", Helvetica, sans-serif;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+.intro-paragraph {
+	font-size: 12pt;
+	margin-top: 0px;
+}
+
+p.residential, p.commercial {
+	margin-top: 0px;
+}
+
+.services-left-sidebar {
+	position: relative;
+	float: left;
+}
+
+.services-description {
+	position: relative;
+	float: left;	
+	left: 12px;
+	width: 360px;
+}
+
+.services-description p:first-of-type {
+	margin-top: 0px;
+}
+
+.learn-more {
+	text-align: right;
+	margin-right: 12px;
+}
+
+.learn-more a {
+	text-decoration: none;
+	color: black;
+}
+
+.learn-more a:hover {
+	text-decoration: underline;
+}
+
+#services-featured {
+	position: relative;
+	float: right;
+	top: -111px;
+	width: 348px;
+}
+
+.services-large-pic {
+	margin-bottom: 6px;
+}
+
+.services-small1, .services-small3 {
+	margin-right: 7px;
+}
+
+.services-small1, .services-small2 {
+	margin-bottom: 6px;
+}
+
+footer {
+	margin: 36px;
+}

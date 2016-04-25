@@ -1,0 +1,485 @@
+/* Clearfix portion from: /*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/******************************************
+******************************************/
+* { -moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box; 
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	min-width: 100%;
+	min-height: 100%;
+}
+
+body {
+	position: relative;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+}
+
+div#body-wrap {
+	width: 1280px;
+	height: 100%;
+	margin: 0 auto;
+	border-left: 3px solid #e1e1e1;
+	border-right: 3px solid #e1e1e1;
+}
+
+button, 
+h3, 
+#main-nav li, 
+.member-count {
+	text-transform: uppercase;
+}
+
+button {
+	background-color: #2e9df7;
+	border-radius: 0.3em;
+	border-style: none;
+}
+
+h4, 
+footer li {
+	text-transform: lowercase;
+}
+
+ul {
+	list-style: none;
+}
+
+a, 
+a:link, 
+a:hover {
+	text-decoration: none;
+}
+
+
+/******************************************
+Header
+******************************************/
+
+header {
+	position: relative;
+	width: 100%;
+	height: 58px;	
+
+	background-color: #303030;
+}
+
+div.header-logo {
+	float: left;
+	width: 326px;
+	height: 58px;	
+	padding-left: 150px;
+
+	border-right: 1px solid #161515;
+}
+
+div.header-logo img {
+	margin: 14px -7px;
+	height: 30px;
+	-webkit-transform: scale(0.95);
+}
+
+ul#main-nav {
+	position: relative;
+	float: left;	
+	width: 650px;
+	margin: 0;
+	padding: 0;		
+
+	font-size: .7em;
+
+	border-left: 1px solid #464545;
+	border-right: 1px solid #161515;
+}
+
+ul#main-nav li {
+	float: left;
+	height: 58px;
+	padding: 22px 0px 0px 36px;
+}
+
+ul#main-nav a {
+	color: #e5e3e3;
+}
+
+ul#main-nav a:hover {
+	color: #ffffff;
+}
+
+div.mycharity-water {
+	float: right;
+	width: 298px;
+	height: 58px;
+	padding-top: 15px;
+
+	border-left: 1px solid #464545;
+}
+
+div.mycharity-water button {
+	margin-left: 14px;
+	padding: 7px 13px;
+
+	text-transform: lowercase;
+	color: #fff;
+	font-size: 0.8em;
+}
+
+div.mycharity-water span {
+	font-style: italic;
+}
+
+
+/******************************************
+Featured Section
+******************************************/
+
+section#featured {
+	position: relative;
+	width: 100%;
+	height: 563px;
+
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+
+	background-image: url('../images/pipeline-header-fixed.jpg');
+	background-size: contain;
+}
+
+section#featured img {
+	display: block;
+	margin: 0 auto;
+	padding-top: 70px;
+}
+
+section#featured h2 {
+	margin-bottom: 26px;
+	padding: 23px 0px;
+
+	font-size: 2.3em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	letter-spacing: 1px;
+	line-height: 1.5;
+}
+
+section#featured button {
+	margin: -20px auto 47px;	
+	padding: 21px 50px;
+
+	letter-spacing: 2px;
+	color: #fff;	
+}
+
+p.member-count {
+	letter-spacing: 1px;
+}
+
+
+/******************************************
+Mission Section
+******************************************/
+
+section#mission {
+	position: relative;
+	margin: 0 auto;
+
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;	
+}
+
+section#mission h2 {
+	margin: 39px 0px 47px 0px;
+
+	font-size: 1.55em;
+	font-weight: 300;	
+	line-height: 1.6;
+	letter-spacing: 1px;
+	color: #333232;
+}
+
+div.call-to-action {
+	width: 80%;
+	height: 320px;
+	margin: 0 auto;
+}
+
+article.action {
+	position: relative;
+	float: left;
+	width: 310px;
+	margin: 0px 10px
+}
+
+article.action h3 {
+	position: absolute;
+	top: 71px;
+	left: 61px;
+
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: .9em;
+	color: #fff;
+
+	border-bottom: 1px solid #fff;
+}
+
+article.sponsor h3, article.water-crisis h3 {
+	left: 93px;
+}
+
+article.action p {
+	padding: 10px 35px;
+
+	font-size: 1.1em;
+	font-weight: 300;
+	line-height: 1.5;
+	color: #333232;
+}
+
+div.section-divider {
+	height: 53px;
+}
+
+div.section-divider img {
+	padding-top: 47px;
+}
+
+
+/******************************************
+Values Section
+******************************************/
+
+section#values {
+	clear: both;
+	position: relative;
+	width: 80%;
+	height: 823px;
+	margin: 0 auto;
+
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	color: #333232;
+}
+
+section#values h2 {
+	margin: 0;
+	padding: 77px 0px 35px 0px;
+
+	font-size: 1.7em;
+	font-weight: 300;
+}
+
+section#value-badges {
+	width: 100%;
+	height: 510px;
+	margin: 9px auto;
+}
+
+article.badge {
+	position: relative;
+	float: left;
+	width: 332px;
+	margin-bottom: 75px;
+}
+
+article.badge h3 {
+	display: inline;
+	margin: 0px 48px 0px 27px;
+
+	font-size: 1.4em;
+	font-weight: 600;
+}
+
+article.badge img {
+	display: block;
+	max-width: 250px;
+	margin: 30px;
+}
+
+article.badge p {
+	width: 264px;
+	margin: 5px 33px 0px 28px;
+
+	line-height: 1.7;
+}
+
+section#values button {
+	margin: 0 auto;
+	padding: 23px 32px;
+
+	font-weight: 600;	
+	letter-spacing: 1px;
+
+	background-color: #fff;	
+	border: 2px solid #2e9df7;	
+	border-radius: .3em;
+}
+
+section#values button:hover {
+	border: 2px solid #303030;
+}
+
+
+/******************************************
+Footer
+******************************************/
+
+footer {
+	width: 100%;
+	height: 370px;
+
+	font-size: .85em;
+
+	background-color: #303030;
+}
+
+footer a:hover {
+	color: #e6e6e6;
+}
+
+div.more-info {
+	position: relative;
+	width: 80%;
+	height: 182px;
+	margin: 0 auto;
+}
+
+div.resource {
+	float: left;
+	width: 20%;
+	padding-top: 43px;
+}
+
+div.resource h4 {
+	color: #e6e6e6;
+	padding-left: 30px;
+	margin-bottom: 12px;
+}
+
+div.resource ul {
+	padding-left: 30px;
+	line-height: 1.9;
+}
+
+div.resource li, 
+div.resource a, 
+div.status li, 
+div.status a, 
+div#sign-up p {
+	color: #6e6e6e;
+}
+
+
+div.resource a:hover, 
+div.status a:hover, 
+div#sign-up p:hover {
+	color: #e6e6e6;
+}
+
+div.resource ul li span img {
+	display: inline;
+}
+
+a.has-resource-icon {
+	padding-left: 10px;
+}
+
+span.cw-icon-facebook {
+	padding: 0px 2px;
+}
+
+div.footnotes {
+	position: relative;
+	width: 80%;
+	margin: 0 auto;
+}
+
+div.footer-divider {
+	display: block;
+	width: 80%;
+	margin: 0px auto;
+}
+
+div.status {
+	float: left;
+	margin-top: 42px;
+	padding-left: 19px;
+}
+
+div.status li {
+	float: left;
+	padding-right: 15px;
+}
+
+span.cw-icon-heart {
+	display: inline-block;
+	width: 14px;
+	height: 11px;
+	background-image: url(../images/heart_gray.png);
+}
+
+span.cw-icon-heart:hover {
+	background-image: url(../images/heart_red.png);
+}
+
+div#sign-up {
+	float: left;
+	width: 250px;
+	height: 50px;
+	margin: 24px 0px 0px 9px;
+
+	background-color: #222;
+	border-radius: .3em;
+}
+
+div#sign-up p {
+	float: left;
+	margin-top: 15px;
+	padding: 2px 15px;
+
+	font-weight: bold;
+}
+
+div#sign-up button {
+	float: right;
+	margin: 8px;
+	padding: 10px 19px;
+
+	font-size: .8em;
+	letter-spacing: 1px;			
+	color: #6e6e6e;
+
+	background-color: #303030;
+	border-radius: .2em;
+}
+
+div#sign-up button:hover {
+	background-color: #2e9df7;	
+	color: #fff;
+}

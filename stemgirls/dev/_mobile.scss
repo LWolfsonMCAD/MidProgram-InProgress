@@ -1,0 +1,71 @@
+/************************************
+Mobile/Tablet Friendly
+************************************/
+@media screen and (max-width: 768px) {
+
+header {
+	ul.main-navigation {
+		margin-left: 7.5%;
+		padding: 0px;
+
+		li {
+			width: 30%;
+			padding: 0px;
+
+			border-right: 0.5px solid #fff;
+		}
+	}
+}
+
+img.desktop-intro-pic {
+	display: none;
+}
+
+div.container {
+	padding: 0 7.5%;
+
+/*If there's an introductory paragraph, this will style it*/
+	section.intro {
+		p {
+			width: 100%;
+		}
+
+		img.mobile-intro-pic {
+			display: block;
+		    width: 100%;
+		    max-width: 290px;
+		    margin: 0 auto;
+		}
+	}
+
+
+/*References section on all pages*/
+	section.references {
+		width: 90%;
+
+		h6 {
+			margin-top: 30px;
+		}
+	}
+}
+
+/************************************
+SciGirls Seven page
+************************************/
+section#sciseven-list {
+	div.sciseven {
+		width: 100%;
+	}
+
+	div#sciseven-left-column {
+		width: 100%;
+		margin-right: 0;
+	}
+
+	div#sciseven-right-column {
+		width: 100%;
+		margin-top: -1em;
+	}
+}
+
+}

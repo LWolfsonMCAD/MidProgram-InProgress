@@ -1,0 +1,97 @@
+/*COLORS
+Blue: #284f63;
+Purple: #825084;
+Pink: #992D5A;
+Green: #188754;
+
+/*
+
+/************************************
+jQuery styles
+************************************/
+.main-navigation li.dropdownHover {
+	background-color: #188754;
+}
+
+.main-navigation li.subNavHover {
+	background-color: #992D5A;
+}
+
+div.inactiveBio {
+	display: none;
+}
+
+.jQueryHover, .activeField {
+	background-color: #992D5A;
+}
+
+.jQueryHover a, .activeField a {
+	font-weight: 200;
+	text-decoration: none;
+	color: #fff;
+}
+
+section#roleModelBiographies {
+	min-height: 300px;
+
+		h3.noBioInfo {
+			text-decoration: none;
+		}
+
+		div.roleModelInfo.bioNoImages {
+			width: 60%;
+			margin: 20px auto;
+			-moz-column-count: 1;
+		    -webkit-column-count: 1;
+		}
+
+		div.roleModelInfo.longBio {
+			float: left;
+			width: 60%;
+			margin: 0px auto 20px;
+			-moz-column-count: 1;
+		    -webkit-column-count: 1;
+		}
+}
+
+section#roleModelBiographies div.current {
+	display: block;
+}
+
+
+div.roleModelBio {
+	position: relative;
+
+	// img.closebox {
+	// 	position: absolute;
+	// 	top: -45px;
+	// 	right: 17px;
+	// }
+
+	button.closeBio {
+		clear: left;
+		display: block;
+		margin-left: 45%;
+		padding: 10px;
+		border: 1px solid #828084;
+		border-radius: 10px;
+		font-weight: 200;
+		color: #fff;
+		background-color: #825084;
+	}
+}
+
+div.placeholder {
+	width: 100%;
+	margin-top: 30px;
+
+		h2 {
+			text-align: center;
+		}
+
+		img {
+			display: block;
+			width: 75%;
+			margin: 30px auto 50px;
+		}
+}

@@ -1,0 +1,128 @@
+<!doctype html>
+<html class="no-js" lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" content="This is the personal portfolio site for Lisa Myers, a front-end web developer.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/styles.min.css">
+        
+        <script src="js/modernizr-2.8.3.min.js"></script>
+        <script src="php/form_mailer.php"></script>
+    </head>
+    <body>
+        <nav  id="main-nav">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="#selectedWorks">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="main">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <header>
+            <!-- <img id="logo" alt="Lisa Myers"> -->
+            <h1>Lisa Myers</h1>
+
+            <p id="tagline">I am a freelance front-end web developer based in Minneapolis, MN.</p>
+        </header>
+
+        <div id="selectedWorks">
+            <div id="highdramma" class="project">
+                <img src="img/hd_compmobile.jpg" alt="High Dramma website screenshot" class="projectScreenShot">
+                <h2>High Dramma</h2>
+                <p class="description">Website redesign for a sketch comedy troupe. The old site was built on Joomla, and hard for the group to update, so I built a redesigned site on WordPress. I also made the site responsive, since most of the site visitors will view it on mobile devices at their shows.</p>
+
+                <p class="skills"><span class="star">&bigstar;</span> WordPress, PHP, CSS, SASS, jQuery, Responsive Design, plugins.</p>
+
+                <a href="http://highdramma.lisawolfsonmyers.com" class="viewSite">View Site</a>
+            </div>
+
+            <div id="stemgirls" class="project">
+                <img src="img/scigirlsscreen.jpg" alt="STEMGirls website screenshot" class="projectScreenShot">
+                <h2>STEMGirls</h2>
+                <p class="description">Concept design final project for a web design class. Start to finish, came up with project idea based on PBS’ “SciGirls.” I <a href="" target="_blank">created a process book</a>, then a live HTML version of the site and two inner pages. It was good to go through the design process, step-by-step, and learn the workflow that leads up to building the site.</p>
+
+                <p class="skills"><span class="star">&bigstar;</span> HTML, CSS, Adobe InDesign.</p>
+
+                <a href="http://stemgirls.lisawolfsonmyers.com" class="viewSite">View Site</a>
+            </div>
+
+            <div id="natgeo" class="project">
+                <img src="img/natgeo_compmobile.jpg" alt="NatGeo website screenshot" class="projectScreenShot">
+                <h2>NatGeo</h2>
+                <p class="description">Responsive design concept project. I was tasked with designing one of the National Geographic web pages “mobile first” along with its desktop counterpart. I learned how to streamline content, and let it dictate the flow and layout of a page.</p>
+
+                <p class="skills"><span class="star">&bigstar;</span> HTML, CSS, SASS, Responsive Design, Adobe InDesign.</p>
+
+                <a href="http://natgeo.lisawolfsonmyers.com" class="viewSite">View Site</a>
+            </div>
+
+            <div id="sanctuary" class="project">
+                <img src="img/sanctuaryscreen.jpg" alt="Sanctuary website screenshot" class="projectScreenShot">
+                <h2>Sanctuary</h2>
+                <p class="description">WordPress project. Sanctuary is a fictional artists’ retreat. I was given the mockups and had to create a WordPress site with the desired functionality.</p>
+
+                <p class="skills"><span class="star">&bigstar;</span> WordPress, PHP, CSS, plugins.</p>
+
+                <a href="http://sanctuary.lisawolfsonmyers.com" class="viewSite">View Site</a>
+            </div>
+
+            <!-- <div id="charitywater" class="project">
+                <img src="http://placehold.it/350x200" alt="Charity Water website screenshot" class="projectScreenShot">
+                <h2>Charity Water</h2>
+                <p>I was given the challenge of creating a “pixel perfect” recreation of a site, using only HTML and CSS, without looking at the code. This was one of my first projects, and it emphasized attention to detail and cleanliness of code.</p>
+
+                <p class="skills">HTML, CSS, Adobe Photoshop.</p>
+            </div> -->
+        </div>
+
+        <div id="contact">
+            <img id="profilePhoto" src="img/profile_pic.jpg" alt="A photo of me, Lisa Myers">
+
+            <form id="ajax-contact" method="post" action="mailer.php">
+                <div class="field">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="field">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="field">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+
+                <div class="field">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+
+            <div id="form-messages"></div>
+
+        </div>
+
+        <footer>
+            <ul id="extras">
+                <li><a href="">Resume</a></li>
+                <li><a href="">GitHub</a></li>
+            </ul>
+        </footer>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <!-- <script src="js/main.js"></script> -->
+        <script src="js/app.js"></script>
+    </body>
+</html>

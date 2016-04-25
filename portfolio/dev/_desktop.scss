@@ -1,0 +1,177 @@
+//Eggplant purple: #3F0038;
+//Teal: #004767;
+//Dark teal: #00304C;
+//Pink: #FF1A75;
+//Green: #00CC00;
+
+
+/************************************
+Desktop version of site
+************************************/
+ul {
+	float: right;
+	height: 30px;
+	margin-top: 7px;
+	padding-right: 10%;
+	list-style: none;
+
+		li {
+			display: inline;
+			width: 30%;
+			margin-left: 10px;
+
+				a {
+					padding: 23px;
+					text-decoration: none;
+					color: white;
+					background-color: #00304C;
+				}
+
+				a:hover {
+					background-color: #FF1A75;
+				}
+		}
+
+}
+
+nav#main-nav {
+	height: 50px;
+	padding-top: 10px;
+	background-color: #00304C;
+
+}
+
+div#main {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+	border: none;
+
+	font-family: Helvetica, sans-serif;
+
+
+		header {
+			height: 350px;
+			padding-top: 55px;
+			background: url('../img/wanakapic2.jpg');
+			background-size: 2800px 350px;
+			background-repeat: no-repeat;
+			background-position: center top;
+
+			text-align: center;
+			color: white;
+
+			h1 {
+				margin-top: 0;
+				padding: 40px 0 20px;
+				font-size: 4em;
+				font-weight: 200;
+			}
+
+			p#tagline {
+				padding: 0 30px;
+				font-size: 1.2em;
+				font-weight: 200;
+			}
+		}
+
+		div#selectedWorks {
+			width: 80%;
+			max-width: 960px;
+			margin: 30px auto;
+			padding: 0 25px;
+
+				div.project {
+					width: 45%;
+					float: left;
+					margin-right: 40px;
+					padding: 40px 0;
+
+						img {
+							display: block;
+							max-width: 400px;
+							height: 240px;
+						}
+
+						h2 {
+							margin-top: 1.2em;
+						}
+
+						p.description {
+							height: 100px;
+						}
+
+						p.skills {
+							margin: 2em 0;
+							height: 50px;
+
+								span.star {
+									font-size: 1.2em;
+									color: #FF1A75; 
+								}
+						}
+
+						a.viewSite {
+							margin-left: 35%;
+							padding: 10px;
+							text-decoration: none;
+							color: #FFFFFF;
+							background-color: #00304C;
+							border-radius: 15px;
+						}
+
+				}
+				div.project:nth-child(3) {
+					clear: left;
+				}
+
+		}
+
+		div#contact {
+			clear: left;
+			width: 80%;
+			height: 100px;
+			margin: 20px 0;
+			padding-top: 75px;
+			padding-left: 20%;
+
+				img#profilePhoto {
+					float: left;
+					width: 100px;
+					margin-right: 50px;
+					border-radius: 50px;
+				}
+
+				form#ajax-contact {
+					float: left;
+					width: 40%;
+				}
+
+				div#form-messages {
+					float: left;
+					width: 40%;
+					margin-left: 13%;
+				}
+		}
+
+		footer {
+			clear: left;
+			height: 56px;
+			background-color: #00304C;
+
+				ul#extras {
+					margin: 20px 0 0;
+					padding-right: 20%;
+
+					 	li {
+					 		float: none;
+							margin-top: 17px;
+
+								a {
+									padding: 20px;
+								}
+						}
+				}
+		}
+
+}

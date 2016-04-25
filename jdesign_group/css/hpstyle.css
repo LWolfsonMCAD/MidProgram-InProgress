@@ -1,0 +1,116 @@
+* { -moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box; 
+}
+
+html {
+	
+}
+
+body {
+	width: 960px;
+	margin: 36px auto;
+	border: 1px black solid;
+}
+
+.content {
+	margin: 15px 36px;
+	font-family: Helvetica, sans-serif;
+	font-size: 12pt;
+	font-weight: normal;
+	line-height: 1.2;
+}
+
+header {
+	width: 888px;
+	height: 140px;
+}
+
+#header-logo {
+	float: left;
+}
+
+#main-nav {
+	position: relative;
+	float: right;
+	font-family: "ff-enzo-web", Helvetica, sans-serif;
+	margin-top: 15px;
+}
+
+#main-nav ul {
+	list-style: none;
+}
+
+#main-nav li {
+	padding: 25px;	
+	display: inline;
+}
+
+#main-nav li:last-of-type {
+	padding-right: 0px;
+}
+
+#main-nav li a {
+	text-decoration: none;
+	color: black;
+}
+
+#main-nav a:hover {
+	text-decoration: underline;
+}
+
+.clear {
+	clear: both;
+}
+
+#homepage-tiles {
+	height: 580px;
+	margin-bottom: 40px;
+}
+
+#homepage-tiles img {
+	margin-bottom: 3px;
+}
+
+.column1 {
+	width: 348px;
+	float: left;
+	margin-right: 6px;
+}
+
+.column2 {
+	width: 348px;
+	float: left;
+	margin-left: 3px;
+	margin-right: 3px;
+}
+
+.column3 {
+	width: 168px;
+	float: right;
+	margin-left: 3px;
+}
+
+footer {
+	font-family: "ff-enzo-web", Helvetica, sans-serif;
+	font-size: 10px;
+	margin-bottom: 36px;
+	padding-top: 20px;
+	border-top: 1px solid gray;	
+}
+
+footer p {
+	display: inline;
+	font-size: 10pt;
+}
+
+.social-media {
+	float: right;
+}
+
+.icon {
+	width: 32px;
+	height: 32px;
+}
+
+

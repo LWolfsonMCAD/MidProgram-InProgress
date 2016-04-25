@@ -1,0 +1,404 @@
+/************************************
+Mobile/Tablet Friendly
+************************************/
+@media screen and (max-width: 768px) {
+	html {
+		  background: -webkit-linear-gradient(#23371d, #fff); /* For Safari 5.1 to 6.0 */
+		  background: -o-linear-gradient(#23371d, #fff); /* For Opera 11.1 to 12.0 */
+		  background: -moz-linear-gradient(#23371d, #fff); /* For Firefox 3.6 to 15 */
+		  background: linear-gradient(#23371d, #fff); /* Standard syntax */
+		  background-size: 100% 10%;
+		  background-repeat: no-repeat;
+	}
+
+	body {
+		max-width: 592px;
+		background-color: #ffffff;
+		margin: 0 auto;
+	}
+
+	#main-nav,
+	button.signin-button {
+		display: none;
+	}
+
+	#mobile-main-nav {
+		display: block;
+		list-style: none;
+		background: #111;
+		// width: 90%;
+		max-width: 592px;
+		height: 100%;
+		margin: 0 auto;
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 1;
+
+			ul {
+				margin-left: 5%;
+				margin-top: 100px;
+
+					li {
+						display: block;
+						width: 100%;
+						line-height: 2.5em;
+						letter-spacing: 1px;
+					
+							a {
+								padding: 10px;
+								font-weight: 400;
+								text-decoration: none;
+								color: #fff;
+							}
+					}
+
+					li:first-of-type {
+						margin-left: 0;
+					}
+			}
+	}
+
+	// div#mobile-menu-toggle {
+	// 	position: relative;
+	// }
+
+	.nav-trigger {
+		position: absolute;
+		clip: rect(0, 0, 0, 0);
+		color: #fff;
+		z-index: 1000;
+	}
+
+	// MENU FIXES START HERE!
+
+	$noListLableLeft: 30px;
+	$listWrapperLeft: 700px;
+	$listLableLeft: ($noListLableLeft - $listWrapperLeft);
+
+	label[for="nav-trigger"] {
+		position: absolute;
+		top: 35px;
+		left: $noListLableLeft;
+		z-index: 2;
+		width: 30px;
+		height: 30px;
+		cursor: pointer;
+		background-image: url('../img/menu_button_icon.png');
+		background-size: contain; 
+	}
+ 
+	.nav-trigger:checked + #wrapper {
+	    left: $listWrapperLeft;
+
+	    label[for="nav-trigger"] {
+	    	left:$listLableLeft;
+	    }
+
+	}
+
+	// END MENU FIXES
+
+	#wrapper {
+		min-width: 100%;
+		min-height: 100%;
+		background-color: #fff;
+		position: relative;
+		bottom: 100%;
+		left: 0;
+		z-index: 1;
+	}
+
+	div#header {
+		height: 80px;
+	}
+
+	#header h1 {
+		margin-left: 35%;
+	}
+
+	#connect-social-media {
+		display: none;
+	}
+
+	#header #search {
+		margin-top: 0;
+		width: 35px;
+		height: 35px;
+		position: relative;
+		top: 35px;
+		right: -85px;
+		background-image: url('../img/white_search_icon35x35.png');
+		background-repeat: no-repeat;
+
+			form {
+				display: none;
+			}
+	}
+
+	div#main {
+		margin-top: -1px;
+		padding: 0;
+		border: 1px solid #000;
+
+		h1 {
+			margin: 20px 10px;
+		}
+
+		section {
+			padding: 45px 10px;
+		}
+
+		button {
+			width: 40%;
+			margin-left: 30%;
+			margin-top: 20px;
+		}
+
+		// section#top-stories,
+		// section#blog-highlights,
+		// section#latest-videos {
+		// 	height: auto;
+		// 	overflow: auto;
+		// }
+
+		section#top-stories {
+			width: 90%;
+			margin: 0 auto;
+
+			div.featured article {
+				display: block;
+				float: clear;
+				width: 100%;
+				height: 160px;
+				margin-bottom: 15px;
+				padding: 0;
+			
+					img {
+						display: inline;
+						float: left;
+						width: 45%; // 266px / 592px
+						max-height: 145px;
+						margin-right: 10px;
+					}
+
+					h3 {
+						display: inline;
+						font-size: 1.2em;
+					}
+
+					p {
+						margin-top: 5px;
+						font-size: 0.9em;
+						line-height: 1.3em;
+					}
+			}
+
+			// article.top-3-story {
+			// 	display: block;
+			// 	float: clear;
+			// 	width: 100%;
+			// 	height: 160px;
+			// }
+
+			div.latest-stories {
+				width: 100%;
+				float: clear;
+				margin-bottom: 40px;
+				
+				article {
+					margin-top: 0;
+					padding-bottom: 0;
+					border-bottom: none;
+				
+					img,
+					p {
+						display: none;
+					}
+
+					h3 {
+						display: block;
+						margin-top: 0;
+						font-size: 1.2em;
+					}
+				}
+
+				button {
+					display: block;
+				}
+			}
+		}
+
+		#blog-highlights {
+			float: clear;
+			width: 100%;
+			margin: 0;
+			padding-left: 10px;
+			border: none;
+
+			h2 {
+				font-size: 1.5em;
+			}
+			ul {
+				list-style: none;
+				width: 100%;
+				margin-bottom: 40px;
+				padding-left: 10px;
+
+					li {
+						margin-bottom: 10px;
+						line-height: 1.8em;
+
+							img {
+								display: none;
+							}
+
+							a {
+								font-weight: 700;
+								font-size: 1.2em;
+							}
+					}
+			}
+
+			button {
+				display: block;
+				margin-bottom: 40px;
+			}
+		}
+
+
+		#latest-videos {
+			float: clear;
+			width: 100%;
+			margin: 0;
+			padding-left: 10px;
+			border: none;
+
+				h2 {
+					font-size: 1.5em;
+				}
+
+				ul {
+					padding-left: 0;
+					list-style: none;
+					// text-align: center;
+
+						li {
+							margin-left: 13%;
+							margin-bottom: 30px;
+							max-width: none;
+
+							iframe {
+								width: 400px;
+								max-width: 400px;
+								height: 226px;
+								max-height: 226px;
+							}
+
+							p {
+								margin-top: 4px;
+							
+									a {
+										font-size: 1em;
+									}
+							}
+							
+						}
+				}
+		}
+
+
+		#footer {
+			clear: both;
+			height: auto;
+			padding-top: 0px;
+			background-color: red;
+			border-top: none;
+
+				div#site-info {
+					clear: both;
+					width: 100%;
+					height: 40px;
+					padding-top: 3px;
+					padding-left: 0;
+					background: url('../img/ng_rectangle_mobile.png');
+					background-repeat: no-repeat;
+					background-position: 15px;
+					background-color: #4e5b4f;
+
+						// img {
+						// 	display: inline;
+						// 	float: left;
+						// 	padding-left: 8px;
+						// 	max-width: 20px;
+						// 	margin: 6px 6px;
+						// }
+
+						div#footer-title {
+							padding-left: 43px;
+						}
+
+						h5 {
+							float: left;
+							margin-top: 11px;
+							font-size: 1em;
+							font-weight: 400;
+							color: #fff;
+								
+								br {
+									display: none;
+								}
+						}
+
+						#copyright {
+							float: right;
+							width: auto;
+							padding-right: 10px;
+							font-size: 0.8em;
+							color: #fff;
+						}
+				}
+
+				
+
+				#footer-nav {
+					clear: both;
+					width: 100%;
+					height: auto;
+					padding-bottom: 15px;
+					background-color: #ebebeb;
+
+						div {
+							width: 100%;
+							clear: both;
+							padding-left: 15px;
+						}
+
+						h6 {
+							display: block;
+							font-size: 1em;
+							margin-bottom: 10px;
+						}
+				
+						h6:first-of-type {
+							margin-top: 0;
+							padding-top: 20px;
+						}
+
+						ul {
+							list-style: none;
+							margin-top: 5px;
+							margin-bottom: 0;
+							font-size: 1em;
+
+								li {
+									padding-left: 10px;
+									line-height: 1.5em;
+								}
+						}
+				}
+		}
+	}
+}
