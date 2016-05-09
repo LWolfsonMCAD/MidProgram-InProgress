@@ -1,0 +1,115 @@
+/************************************
+Mobile/Tablet Friendly
+************************************/
+@media only screen and (max-width: 768px) {
+
+	div#main {
+
+			header h1 {
+				font-size: 2.5em;
+			}
+
+			div#selectedWorks {
+				margin: 0 auto;
+
+					div.project {
+						width: 100%;
+						margin-right: 0;
+						border-bottom: 1px dotted black;
+
+							img {
+								height: 200px;
+							}
+
+							p.description {
+								height: auto;
+							}
+
+							p.skills {
+								height: auto;
+							}
+
+							a.viewSite {
+								display: none;
+							}
+
+					}
+
+					div#highdramma a.viewSite,
+					div#natgeo a.viewSite {
+						display: block;
+						width: 70px;
+					}
+			}
+
+			div#contact {
+				width: 100%;
+				padding-top: 35px;
+				padding-left: 10%;
+			}
+
+			footer {
+				clear: left;
+				height: 56px;
+
+					ul#extras {
+						margin: 20px 0 0;
+						padding-right: 20%;
+
+						 	li {
+						 		float: none;
+								margin-top: 17px;
+
+									a {
+										padding: 20px;
+									}
+							}
+					}
+			}
+
+	}
+}
+
+
+/************************************
+## Smallest mobile styles
+************************************/
+@media screen and (max-width: 499px) {
+	ul {
+		padding-right: 5%;
+	}
+
+	div#main {
+
+		header {
+			height: 225px;
+			padding-top: 0;
+
+			p#tagline {
+				text-align: left;
+			}
+		}
+	
+
+		div#selectedWorks {
+			width: 88%;
+			margin-left: 0;
+
+				div.project {
+						img {
+							max-width: 350px;
+							margin-left: 0;
+						}
+
+				}
+		}
+
+		footer {
+			ul#extras {
+				padding-right: 5%;
+			}
+		}
+
+	}
+	
+}

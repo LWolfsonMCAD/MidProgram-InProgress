@@ -1,0 +1,232 @@
+//Teal: #73aeab;
+//Eggplant: #342b3b;
+//Salmon: #efa18c;
+//Dark Salmon: #a66752;
+ 
+
+/************************************
+Desktop version of site
+************************************/
+html {
+	width: 100%;
+}
+
+body {
+	position: relative;
+	width: 80%;
+	height: 100%;
+	margin: auto;
+
+	font-family: 'Source Sans Pro', Helvetica, sans-serif;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	font-weight: 600;
+	color: #73aeab;
+	text-decoration: none;
+}
+
+
+header {
+	width: 100%;
+	height: auto;
+	min-height: 50px;
+	padding: 2em;
+
+	nav {
+		width: 100%;
+		border-bottom: 2px solid #342b3b;
+
+		ul#main-navigation {
+			display: block;
+			width: 60%;
+			height: auto;
+			min-height: 50px;
+			margin: auto;
+			padding: 0;
+
+			li {
+				display: inline;
+				float: left;
+				width: 23%;
+				margin-right: 2%;
+				text-align: center;
+
+				a{
+					font-size: 1.2em;
+					padding: 1em;
+				}
+			}
+		}
+	}
+}
+
+div.content {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+
+	div#intro {
+		width: 100%;
+		margin-bottom: 3em;
+		text-align: center;
+
+		h1 {
+			font-size: 4em;
+			margin: 0 0 0.3em;
+		}
+
+		p {
+			font-size: 1.3em;
+			font-weight: 600;
+			font-style: italic;
+		}
+	}
+
+	div#about {
+		width: 80%;
+		height: auto;
+		overflow: hidden;
+		margin: 3em auto;
+		padding: 2em 0;
+
+		div.blurb {
+			float: left;
+			width: 48%;
+			margin-right: 3%;
+
+			p {
+				margin-top: 0;
+				font-size: 1.1em;
+				line-height: 1.5;
+			}
+		}
+
+		div.mypic {
+			float: left;
+			width: 45%;
+
+			img {
+				width: 100%;
+			}
+		}
+	}
+
+	div#projects {
+		width: 100%;
+		height: auto;
+		overflow: hidden;
+		padding: 3em 0;
+
+		div.project {
+			float: left;
+			width: 28%;
+			margin-right: 2%;
+			padding: 0 1em;
+
+			img {
+				display: block;
+				width: 95%;
+				margin: auto;
+			}
+
+			p.skills {
+				margin: 2em 0;
+				color: #efa18c;
+				font-weight: 600;
+				font-style: italic;
+			}
+
+			a.button {
+				display: block;
+				float: left;
+				width: 35%;
+				margin-right: 5%;
+				padding: 0.8em;
+
+				text-align: center;
+				color: #fff;
+				background-color: #a66752;
+				border-radius: 3px;
+			}
+		}
+
+		div.project:nth-of-type(3) {
+			margin-right: 0;
+		}
+	}
+
+	div#contact {
+	    width: 90%;
+	    height: auto;
+	    overflow: hidden;
+	    margin: auto;
+	    padding-top: 5em;
+
+	    div.blurb {
+	    	float: left;
+	    	width: 35%;
+	    	margin-right: 5%;
+	    	padding-top: 2em;
+
+	    	img#profilePhoto {
+	    		display: block;
+				float: left;
+			    width: 22%;
+			    max-width: 100px;
+			    margin-right: 5%;
+			    border-radius: 50px;
+			}
+
+			p {
+				padding-top: 0.6em;
+			}
+	    }
+
+		form#ajax-contact {
+			float: left;
+			width: 55%;
+
+			div.left {
+				float: left;
+			    width: 30%;
+			    margin-right: 5%;
+			}
+
+			div.right {
+				float: left;
+				width: 60%;
+			}
+		}
+
+		div#form-messages {
+			float: left;
+			width: 40%;
+			margin-left: 13%;
+		}
+	}
+
+		footer {
+			clear: left;
+			height: 56px;
+			background-color: #adccca;
+
+				ul#extras {
+					margin: 20px 0 0;
+					padding-right: 20%;
+
+					 	li {
+					 		float: none;
+							margin-top: 17px;
+
+								a {
+									padding: 20px;
+								}
+						}
+				}
+		}
+}

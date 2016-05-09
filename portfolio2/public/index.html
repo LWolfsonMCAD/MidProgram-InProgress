@@ -1,0 +1,139 @@
+<!doctype html>
+<html class="no-js" lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <title>Lisa Myers : Front-End Web Developer</title>
+        <meta name="description" content="This is the personal portfolio site for Lisa Myers, front-end web developer.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico in the root directory -->
+
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,600italic' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" href="css/styles.min.css">
+        
+        <script src="js/modernizr-2.8.3.min.js"></script>
+        <script src="php/form_mailer.php"></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul id="main-navigation">
+                    <li><a href="#top">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="content clearfix">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div id="intro">
+            <h1>Lisa Myers</h1>
+
+            <p>I am a freelance front-end web developer based in Minneapolis, MN.</p>
+        </div>
+
+        <div id="about">
+        <div class="blurb">
+            <p>I put my creative Type-A skills to good use, am logical and methodical when it comes to problem solving, while also being able to adapt quickly to new ways of doing things (you'd be amazed how well a background in film production translates to web development). I legitimately like to learn new and different things, and want to keep writing ever cleaner code. I have a high technical aptitude and a soft spot for cookies&hellip; and books. Oh! And adventures, give me roadtrips, camping, overseas vacations any time!</p>
+        </div>
+
+        <div class="mypic">
+            <img src="img/the_otter_and_i.jpg" alt="Me, Myself and a giant otter">
+        </div>
+        </div>
+
+        <div id="projects" class="clearfix">
+            <div id="charitywater" class="project">
+                <img src="img/charitywater.png" alt="Charity Water website screenshot" class="projectScreenShot">
+                <h2>Charity:Water</h2>
+                <p class="description">This was one of my first assignments, where we were tasked with recreating a charity's website, trying to get it as close to matching as possible, without looking at the source code. (You'll notice a couple of minor differences because I didn't use Proxima Nova typeface, and had to grab a screenshot from the WayBack Machine for you to see what I was working with at the time). If I were to do this assignment today I'd use SASS to help streamline it.</p>
+
+                <p class="skills"><span class="star">&bigstar;</span> HTML &amp; CSS</p>
+
+                <a href="charitywater_comparison.pdf" class="project_btn button">Site Comparison</a>
+
+                <a href="http://charitywater.lisawolfsonmyers.com" class="viewSite button">View Site</a>
+            </div>
+
+            <div id="stemgirls" class="project">
+                <img src="img/stemgirls.png" alt="STEMGirls website screenshot" class="projectScreenShot">
+                <h2>STEMGirls</h2>
+                <p class="description">This site is the result of a web design class final project. As a developer, knowing the entire process and understanding what goes into the design makes me a more effective communicator and gives a better understanding of the projects as a whole. I designed this site from start to finish, based on PBS’ “SciGirls.” I created a process book, a live HTML version of two inner pages, and later went back to add some jQuery functionality to the "Role Models" page, with a non-JS failover.</p>
+
+                <p class="skills"><span class="star">&bigstar;</span> HTML, CSS, jQuery, Adobe InDesign &amp; Photoshop</p>
+
+                <a href="" class="project_btn button">Process Book</a>
+
+                <a href="http://stemgirls.lisawolfsonmyers.com/role-models.html" class="viewSite button">View Site</a>
+            </div>
+
+            <div id="moam" class="project">
+                <img src="img/moam.png" alt="Minnesotan on a Mission website screenshot" class="projectScreenShot">
+                <h2>Minnesotan On A Mission</h2>
+                <p class="description">This project is from another design class, and is for a friend who's moving to Mexico to become a missionary. The purpose of the site is to keep her fellow church members informed about her missionary work, and encourage them to donate and sponsor her. For the purpose of the class I built four of the sites' pages using HTML &amp; CSS, but I plan to build it out fully in Wordpress before she leaves.</p>
+
+                <p class="skills"><span class="star">&bigstar;</span> HTML, CSS, SASS, jQuery, Responsive Design, Adobe InDesign &amp; Photoshop.</p>
+
+                <a href="" class="project_btn button">Process Book</a>
+
+                <a href="http://moam.lisawolfsonmyers.com" class="viewSite button">View Site</a>
+            </div>
+        </div>
+
+        <div id="contact" class="clearfix">
+            <div class="blurb">
+                <img id="profilePhoto" src="img/profile_pic.jpg" alt="A photo of me, Lisa Myers">
+
+                <p>If you'd like to get any additional information, or are in need of a friendly front-end web developer, please fill out the form and I'll get in touch with you as soon as I can. Thanks!</p>
+            </div>
+
+            <form id="ajax-contact" method="post" action="mailer.php">
+            <div class="left">
+                <div class="field">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="field">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="field">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+            </div>
+
+                <div class="field">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+
+            <div id="form-messages"></div>
+
+        </div>
+
+        <footer>
+            <ul id="extras">
+                <li><a href="">Resume</a></li>
+                <li><a href="">GitHub</a></li>
+            </ul>
+        </footer>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <!-- <script src="js/main.js"></script> -->
+        <script src="js/app.js"></script>
+    </body>
+</html>
